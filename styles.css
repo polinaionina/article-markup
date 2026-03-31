@@ -1,80 +1,107 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
-/* ===== HEADER ===== */
-
 header {
-    background-color: #f5f5f5;
-    padding: 30px 48px;
+  background-color: #f5f5f5;
+  padding: 30px 48px;
 }
 
 .header-container {
-    width: 700px;
+  width: 700px;
 }
 
 .logo {
-    width: 97px;
-    height: 64px;
-    display: block;
-    margin-bottom: 30px;
+  width: 97px;
+  height: 64px;
+  display: block;
+  margin-bottom: 30px;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
+  list-style: none;
+  display: flex;
+  gap: 30px;
 }
 
 nav ul li a {
-    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
-    font-size: 24px;
-    color: #333333;
-    line-height: 36px;
-    text-decoration: none;
+  font-family:
+    "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial,
+    sans-serif;
+  font-size: 24px;
+  color: #333333;
+  line-height: 36px;
+  text-decoration: none;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
+  cursor:
+    url("pointer.png") 0 0,
+    pointer;
 }
 
 nav ul li a.active {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-/* ===== ARTICLE ===== */
+.has-pointer {
+  position: relative;
+}
+
+.hovered {
+  text-decoration: underline;
+}
+
+.pointer {
+  position: absolute;
+  top: 22px;
+  left: 64px;
+  width: 21px;
+  height: 22px;
+  z-index: 10;
+  pointer-events: none;
+
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-shadow: 0 1px 2px 0 #000000;
+}
 
 article {
-    width: 700px;
-    margin-left: 48px;
-    padding-top: 40px;
+  width: 700px;
+  margin: auto;
+  padding-top: 40px;
 }
 
 h1 {
-    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
-    font-size: 42px;
-    line-height: 1.05;
-    margin-bottom: 20px;
+  font-family:
+    "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial,
+    sans-serif;
+  font-size: 42px;
+  line-height: 1.05;
+  margin-bottom: 20px;
 }
 
 p {
-    font-size: 21px;
-    line-height: 1.5;
-    margin-top: 20px;
+  font-size: 21px;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  line-height: 1.5;
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 code {
-    font-family: "Courier New", monospace;
+  font-family: "Courier New", monospace;
 }
 
 @media (max-width: 800px) {
-/* Тут пиши стили для мобилки.
+  /* Тут пиши стили для мобилки.
     Стили применятся только когда страничка будет ≤800px шириной
  */
 }
