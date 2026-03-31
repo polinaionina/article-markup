@@ -132,4 +132,8 @@ code {
     section img {
         margin: 25px 20px;
     }
+
+    .image-last {
+        display: none;
+    }
 }
